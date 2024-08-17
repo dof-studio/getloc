@@ -10,6 +10,7 @@ def get_loc(
 ) -> (int | slice | np_ndarray_bool | Any)
 
 # Example
+```python
 df = pd.DataFrame(
     {'A': [0, 1, 2, 3, 4, 5], 'B':['a','b','c','d','e','f']},
     index = ['adam', 'bob', 'charlie', 'david', 'edward', 'frank']
