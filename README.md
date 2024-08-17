@@ -1,5 +1,7 @@
 # Repo 'getLoc'
-An common API to get the location of an index, supporting Pandas or Polars dataframes.
+An common API to get the location of an index, supporting `Pandas` or `Polars` dataframes.
+
+Yes! You will forget the pain when recalling the way to get loc for a certain data structure.
 
 # API
 ```python
@@ -12,11 +14,11 @@ def get_loc(
 ```
 
 # Params
-df : Pandas or Polars dataframe
+`df` : Pandas or Polars dataframe
 
-index_value : Index value to search for
+`index_value` : Index value to search for
 
-column : Column to search in (default: None, when using a Polars dataframe, specify it)
+`column` : Column to search in (default: None, when using a Polars dataframe, specify it)
 
 # Returns
 Location of the index value in the dataframe (integer)
@@ -33,8 +35,6 @@ print("Polars DataFrame: ", get_loc(df_pl, 'charlie', column = 'index')) # Retur
 ```
 
 # Author
-Nathmath from DOF Studio.
-
-On Aug 17, 2024.
+Nathmath from DOF Studio, on Aug 17, 2024.
 
 Nathmath is/was a Master's student of NYU MSFE program.
