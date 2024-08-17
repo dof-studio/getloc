@@ -33,5 +33,8 @@ print("Polars DataFrame: ", get_loc(df_pl, 'charlie', column = 'index')) # Retur
 ```
 
 # Author
-Nathmath from DOF Studio. On Aug 17, 2024.
+Nathmath from DOF Studio.
+
+On Aug 17, 2024.
+
 Nathmath is/was a Master's student of NYU MSFE program.
