@@ -10,7 +10,7 @@ def get_loc(
     index_value: Any,
     *,
     column: Any = None
-) -> (int | slice | np_ndarray_bool | Any)
+) -> int | None
 ```
 
 # Params
