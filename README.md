@@ -1,4 +1,4 @@
-# Repo 'getLoc'
+# Repo 'getloc'
 `Get Locations` An common API `get_loc` that is able to get the location of an index from a dataframe. It seamlessly supports `Pandas` and `Polars` dataframes.
 
 Yes! You will forget the pain when recalling the way to `get loc` for a certain data structure.
