@@ -10,7 +10,7 @@ def get_loc(
     index_value: Any,
     *,
     column: Any = None
-) -> int | None
+) -> (int | None)
 ```
 
 # Params
