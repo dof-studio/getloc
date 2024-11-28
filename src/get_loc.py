@@ -45,16 +45,20 @@ def get_loc(df, index_value:any, *, column:any = None):
     else:
         raise TypeError("Arg 'df' must be a Pandas or Polars DataFrame!")
 
-# Example:
 
-# Pandas DataFrame
-df = pd.DataFrame(
-    {'A': [0, 1, 2, 3, 4, 5], 'B':['a','b','c','d','e','f']},
-    index = ['adam', 'bob', 'charlie', 'david', 'edward', 'frank']
-)
-# Returns 2
-print("Pandas DataFrame: ", get_loc(df, 'charlie'))
-# Convert to Polars DataFrame
-df_pl = pl.from_pandas(df.reset_index(), include_index=True)
-# Returns 2
-print("Polars DataFrame: ", get_loc(df_pl, 'charlie', column = 'index'))
+# Example:
+# Using if __name__ == "__main__"
+
+if __name__ == "__main__":
+    
+    # Pandas DataFrame
+    df = pd.DataFrame(
+        {'A': [0, 1, 2, 3, 4, 5], 'B':['a','b','c','d','e','f']},
+        index = ['adam', 'bob', 'charlie', 'david', 'edward', 'frank']
+    )
+    # Returns 2
+    print("Pandas DataFrame: ", get_loc(df, 'charlie'))
+    # Convert to Polars DataFrame
+    df_pl = pl.from_pandas(df.reset_index(), include_index=True)
+    # Returns 2
+    print("Polars DataFrame: ", get_loc(df_pl, 'charlie', column = 'index'))
